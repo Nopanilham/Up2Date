@@ -1,0 +1,135 @@
+/* SCROLLBAR */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(238, 240, 247, 1); 
+    border: solid 2.5px white;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 107, 24, 1);
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 107, 24, 1); 
+}
+
+/* CONTENT WRAPPER (Artikel Utama) */
+#Content-wrapper {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.9;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    word-break: break-word;
+    padding: 0 16px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+#Content-wrapper p {
+    text-align: justify;
+}
+
+#Content-wrapper p strong {
+    font-weight: 600;
+}
+
+#Content-wrapper a {
+    color: #FF6B18;
+    transition: all 0.3s ease;
+}
+
+#Content-wrapper a:hover {
+    text-decoration: underline;
+}
+
+/* HEADINGS */
+#Content-wrapper h1,
+#Content-wrapper h2,
+#Content-wrapper h3,
+#Content-wrapper h4,
+#Content-wrapper h5,
+#Content-wrapper h6 {
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#Content-wrapper h1 {
+    font-size: 36px;
+}
+
+#Content-wrapper h2 {
+    font-size: 28px;
+}
+
+#Content-wrapper h3 {
+    font-size: 22px;
+}
+
+/* LISTS */
+#Content-wrapper ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+
+#Content-wrapper ol {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+#Content-wrapper li {
+    display: list-item;
+    margin-bottom: 10px;
+}
+
+/* IMAGES & FIGURES */
+#Content-wrapper figure {
+    max-width: 600px;
+    max-height: 450px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#Content-wrapper figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 20px;
+    display: block;
+}
+
+/* CUSTOM ELEMENTS */
+#Content-wrapper ins {
+    color: #FF6B18;
+}
+
+/* RESPONSIVE TWEAKS (optional) */
+@media screen and (max-width: 768px) {
+    #Content-wrapper {
+        padding: 0 12px;
+        font-size: 16px;
+    }
+
+    #Content-wrapper h1 {
+        font-size: 28px;
+    }
+
+    #Content-wrapper h2 {
+        font-size: 24px;
+    }
+
+    #Content-wrapper h3 {
+        font-size: 20px;
+    }
+}
+
